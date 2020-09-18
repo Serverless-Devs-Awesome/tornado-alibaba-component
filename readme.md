@@ -128,6 +128,7 @@ TornadoComponent:
        Bootstrap:
           Port: 9000
           Start: npm run start
+          App: app.py
           Path: ./src/bootstrap
 ```
 
@@ -309,5 +310,6 @@ Domains类型为：
 | 参数名 |  必填|  类型|  参数描述 | 
 | --- |  --- |  --- |  --- | 
 | Port | false | Number | 启动端口 |
+| App | false | String | 入口文件 |
 | Start | false | String | 启动指令 |
 | Path | false | String | Bootstrap路径 |

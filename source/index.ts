@@ -7,7 +7,7 @@ import format = require('string-format');
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 import fse = require('fs-extra');
-import { DEFAULTPORT, DEFAULTSTART, DEFAULTBOOTSTRAP } from './bootstrap';
+import { DEFAULTPORT, DEFAULTSTART, DEFAULTBOOTSTRAP, DEFAULTAPP } from './bootstrap';
 
 interface ProjectConfig {
   ProjectName: string;
@@ -50,7 +50,8 @@ class TornadoComponent extends Framework {
     };
     const formatStr = {
       port: Detail.Bootstrap ? Detail.Bootstrap.Port || DEFAULTPORT : DEFAULTPORT,
-      start: Detail.Bootstrap ? Detail.Bootstrap.Start || DEFAULTSTART : DEFAULTSTART
+      start: Detail.Bootstrap ? Detail.Bootstrap.Start || DEFAULTSTART : DEFAULTSTART,
+      app: Detail.Bootstrap ? Detail.Bootstrap.App || DEFAULTAPP : DEFAULTAPP
     };
     const bootstrapPath = Detail.Bootstrap ? Detail.Bootstrap.Path : undefined;
     if (bootstrapPath) {
