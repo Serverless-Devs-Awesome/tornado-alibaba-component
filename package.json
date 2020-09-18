@@ -1,6 +1,6 @@
 {
   "name": "@serverless-devs/tornado-alibaba",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Serverless Devs Tool Tornado Framework Component For Alibaba Cloud",
   "keywords": [
     "Serverless",
@@ -12,7 +12,6 @@
   "homepage": "https://www.serverlessfans.com",
   "author": "Serverless-Devs",
   "contributors": [
-    "Shoushuai Wang",
     "Anycodes"
   ],
   "license": "MIT",

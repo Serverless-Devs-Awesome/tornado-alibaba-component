@@ -11,7 +11,7 @@
 模版拉取：
 
 ```
-s init tornado
+s init tornado -p alibaba
 ```
 
 其中Yaml的默认配置为：
@@ -22,7 +22,7 @@ TornadoComponent:
   Provider: alibaba
   Extends:
     deploy:
-      - Hook: npm install --production
+      - Hook: pip3 install -r requirements.txt -t ./
         Path: ./src
         Pre: true
   Properties:
