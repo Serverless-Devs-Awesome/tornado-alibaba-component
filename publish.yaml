@@ -2,7 +2,7 @@ Type: Component
 Name: tornado
 Provider:
   - Alibaba
-Version: 0.0.28
+Version: 0.0.29
 Description: 阿里云Tornado组件，帮助您快速部署Tornado项目
 HomePage: https://www.aliyun.com/
 Tags:
@@ -58,6 +58,12 @@ Properties:
             Description: loghub中的project名称
             Type:
               - String
+  App:
+    Required: false
+    Default: ./
+    Description: 项目入口
+    Type:
+      - String
   CodeUri:
     Required: false
     Default: ./

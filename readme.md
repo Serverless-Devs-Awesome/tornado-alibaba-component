@@ -28,6 +28,7 @@ TornadoComponent:
   Properties:
     Region: 'cn-hangzhou'
     CodeUri: './src'
+    App: server.py
 ```
 
 系统默认bootstrap内容：
@@ -47,7 +48,7 @@ TornadoComponent:
   Provider: alibaba
   Extends:
   deploy:
-    - Hook: npm install --production
+    - Hook: pip3 install -r requirements.txt -t ./
       Path: ./src
       Pre: true
   Properties:
@@ -62,6 +63,7 @@ TornadoComponent:
     #      CodeUri:
     #        Bucket: function code包的bucket name
     #        Object: code zip包的object name
+    App: server.py
     CodeUri:
       Bucket: function code包的bucket name
       Src: 本地路径
@@ -139,6 +141,7 @@ TornadoComponent:
 | Region | true | Enum | 地域 |
 | Log | false | Struct | log配置，function产生的log会写入这里配置的logstore |
 | CodeUri | false(默认为./) | String/Struct | 代码位置 |
+| APP | false  | String | 项目入口 |
 | Environment | false | Struct | 环境变量 |
 | Domains | false | Struct/<Struct>List | 自定义域名配置 |
 | Detail | false | Struct | 详细配置 |
