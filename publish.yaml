@@ -2,7 +2,7 @@ Type: Component
 Name: tornado
 Provider:
   - Alibaba
-Version: 0.0.29
+Version: 0.0.30
 Description: 阿里云Tornado组件，帮助您快速部署Tornado项目
 HomePage: https://www.aliyun.com/
 Tags:
@@ -13,7 +13,7 @@ Commands:
   remove: 移除项目
 Service:
   函数计算:
-    Runtime: Other
+    Runtime: Python
     Authorities:
       - 创建函数
       - 删除函数
