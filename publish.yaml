@@ -2,10 +2,13 @@ Type: Component
 Name: tornado
 Provider:
   - Alibaba
-Version: 0.0.37
+Version: 0.0.38
 Description: 阿里云Tornado组件，帮助您快速部署Tornado项目
 HomePage: https://www.aliyun.com/
 Tags:
+  - Tornado
+  - Python
+  - Web
   - 函数计算
 Category: 基础云服务
 Commands:
