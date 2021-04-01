@@ -1,0 +1,1 @@
+升级版本，支持最新的Serverless Devs CLI工具
