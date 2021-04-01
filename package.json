@@ -1,6 +1,6 @@
 {
   "name": "@serverless-devs/tornado-alibaba",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "description": "Serverless Devs Tool Tornado Framework Component For Alibaba Cloud",
   "keywords": [
     "Serverless",
@@ -26,7 +26,7 @@
   "scripts": {
     "build": "tsc -p compile.tsconfig.json",
     "watch": "tsc -w -p compile.tsconfig.json",
-    "publish": "tsc -p compile.tsconfig.json && cd ./src && mkdir ./node_modules && cd .. && cp -r ./node_modules ./src/node_modules"
+    "publish": "tsc -p compile.tsconfig.json && mv lib src && cp -r ./node_modules ./src/node_modules"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
