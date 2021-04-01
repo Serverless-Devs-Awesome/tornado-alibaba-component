@@ -26,7 +26,7 @@
   "scripts": {
     "build": "tsc -p compile.tsconfig.json",
     "watch": "tsc -w -p compile.tsconfig.json",
-    "publish": "tsc -p compile.tsconfig.json && mv lib src && cp -r ./node_modules ./src/node_modules"
+    "publish": "npm install --production && tsc -p compile.tsconfig.json && cp -r ./node_modules ./dist/node_modules"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",

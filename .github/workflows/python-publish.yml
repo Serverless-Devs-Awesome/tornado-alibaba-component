@@ -23,7 +23,6 @@ jobs:
           pip install requests
       - name: NPM install
         run: |
-          npm install --production
           npm run publish
       - name: Add publish file
         run: |
