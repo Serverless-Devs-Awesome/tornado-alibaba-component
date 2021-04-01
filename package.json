@@ -26,7 +26,7 @@
   "scripts": {
     "build": "tsc -p compile.tsconfig.json",
     "watch": "tsc -w -p compile.tsconfig.json",
-    "publish": "tsc -p compile.tsconfig.json && mkdir ./src/ && mkdir ./src/node_modules && cp -r ./node_modules ./src/node_modules"
+    "publish": "tsc -p compile.tsconfig.json && cd ./src && mkdir ./node_modules && cd .. && cp -r ./node_modules ./src/node_modules"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
